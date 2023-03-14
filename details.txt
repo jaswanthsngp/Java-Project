@@ -1,0 +1,3 @@
+Topic: Car Rental System
+Uses file database and command-line interface to manage the Car Rentals
+Will do after MID-TERM
