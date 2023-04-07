@@ -17,3 +17,7 @@
 - Main implements all, based on the inputs entered by the user
 ### Front-End
 - Will do it soon
+
+Download MYSQL and Java-MySQL connector before running the project
+Add path to MySQL connector as class path while running any Project file
+Run Database.java first, then Project.java
