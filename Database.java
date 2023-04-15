@@ -37,13 +37,13 @@ class Main{
                 // username, password
                 );
             Statement statement = connection.createStatement();
-            statement.executeUpdate("create table persons(name varchar(30), age int, gender varchar(6), licence varchar(20) PRIMARY KEY, password varchar(20), contact bigint, emergencyContact bigint);");
-            statement.executeUpdate("create table cars(regNo varchar(10) PRIMARY KEY, chasisNo varchar(20), manufacturer varchar(20), model varchar(30), seats int);");
-            statement.executeUpdate("create table rest(regNo varchar(10) PRIMARY KEY, plicence varchar(20), tookAt bigint);");
-            statement.executeUpdate("ALTER TABLE rest ADD FOREIGN KEY(regNo) REFERENCES cars(regNo);");
-            statement.executeUpdate("ALTER TABLE rest ADD FOREIGN KEY(plicence) REFERENCES persons(licence);");
+            statement.executeUpdate("create table person(name varchar(30), age int, gender varchar(6), licence varchar(20) PRIMARY KEY, password varchar(20), contact bigint, emergencyContact bigint);");
+            statement.executeUpdate("create table car(regNo varchar(10) PRIMARY KEY, chasisNo varchar(20), manufacturer varchar(20), model varchar(30), seats int);");
+            statement.executeUpdate("create table rent(regNo varchar(10) PRIMARY KEY, plicence varchar(20), tookAt bigint);");
+            statement.executeUpdate("ALTER TABLE rent ADD FOREIGN KEY(regNo) REFERENCES car(regNo);");
+            statement.executeUpdate("ALTER TABLE rent ADD FOREIGN KEY(plicence) REFERENCES person(licence);");
             for(String s: data){
-                statement.executeUpdate("insert into cars values("+s+");");
+                statement.executeUpdate("insert into car values("+s+");");
             }
         }catch(Exception x){
             System.out.println(x);
