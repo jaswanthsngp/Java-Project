@@ -18,6 +18,6 @@
 ### Front-End
 - Will do it soon
 
-Download MYSQL and Java-MySQL connector before running the project
-Add path to MySQL connector as class path while running any Project file
-Run Database.java first, then Project.java
+Download leatest versions of MYSQL and JDK.
+Run Setup file, according to the instructions specified in file.
+Then run Main file.
