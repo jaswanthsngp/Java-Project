@@ -16,4 +16,4 @@
 ### Back-End
 - Main implements all, based on the inputs entered by the user
 ### Front-End
-- Will do it soon
+- Main Implements all
