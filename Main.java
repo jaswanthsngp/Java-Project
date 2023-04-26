@@ -4,11 +4,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.table.DefaultTableModel;
 
-// compile
-// javac Main.java
-// Run
-// java -cp "mysql-connector-j-8.0.32/mysql-connector-j-8.0.32.jar" Main.java
-
 // The Driver Code, Project Starts with Login Page
 public class Main {
     public static void main(String[] args) {
