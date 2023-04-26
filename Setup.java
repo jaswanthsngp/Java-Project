@@ -1,11 +1,5 @@
 import java.sql.*;
 
-// Run this file before Running Project.java
-// Complie first
-// javac Setup.java
-// Then run
-// java -cp "mysql-connector-j-8.0.32/mysql-connector-j-8.0.32.jar" Setup.java
-
 public class Setup{
     public static void main(String[] args) {
         String[] data= {
